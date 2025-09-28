@@ -1,0 +1,23 @@
+name: diffusion
+_target_: strhub.models.diffusion.system.DDPIMNet
+
+# Data
+patch_size: [ 4, 8 ]  # [ height, width]
+
+# Architecture
+embed_dim: 384
+enc_num_heads: 6
+enc_mlp_ratio: 4
+enc_depth: 12
+dec_num_heads: 12
+dec_depth: 1
+dec_mlp_ratio: 4
+
+time_step: 25
+dropout: 0.1
+len_token: False
+len_ratio: 1
+num_iter: 5
+
+# Training
+lr: 5e-4
