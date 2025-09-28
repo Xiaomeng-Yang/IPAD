@@ -1,5 +1,5 @@
-name: diffusion
-_target_: strhub.models.diffusion.system.DDPIMNet
+name: ipad
+_target_: strhub.models.diffusion.system.IPAD
 
 # Data
 patch_size: [ 4, 8 ]  # [ height, width]

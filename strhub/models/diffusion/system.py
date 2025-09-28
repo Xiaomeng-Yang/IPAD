@@ -14,7 +14,7 @@ from strhub.models.utils import init_weights
 from .modules import TokenEmbedding, Encoder, Decoder, DecoderLayerEdit
 
 
-class DDPIMNet(BaseSystem):
+class IPAD(BaseSystem):
     def __init__(self, charset_train: str, charset_test: str, max_label_length: int,
                  batch_size: int, lr: float, warmup_pct: float, weight_decay: float,
                  img_size: Sequence[int], patch_size: Sequence[int], embed_dim: int,
